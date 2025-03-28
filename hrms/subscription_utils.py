@@ -75,7 +75,7 @@ def update_erpnext_access(user_input: dict | None):
 	enables erpnext workspaces and roles if user has subscribed to both hrms and erpnext
 	disables erpnext workspaces and roles if user has subscribed to hrms but not erpnext
 	"""
-	if not frappe.utils.get_url().endswith(".frappehr.com"):
+	if not frappe.utils.get_url().endswith(".life.aero"):
 		return
 
 	update_erpnext_workspaces(True)
